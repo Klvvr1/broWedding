@@ -115,10 +115,10 @@ requestAnimationFrame(frame);
 })();
 </script>
 <main class="wrap" id="wrap">
-  <img src="page.jpg" width="1170" height="4031" alt="دعوة زواج: تتشرف أم عبدالله وأم بسام بدعوتكم لحضور زواج ابننا عبدالله وابنتنا ابتسام، وذلك بمشيئة الله يوم السبت 24/10/2026 الموافق 13 جمادى الأولى 1448 هـ، في قصر بصمات للاحتفالات. دعوة شخصية صالحة لشخص واحد فقط. ممنوع اصطحاب الأطفال، ويمنع جوالات الكاميرا. وبحضوركم يتم لنا الفرح والسرور.">
-  <canvas class="ov" id="cdc" style="left:0.0000%;top:41.7362%;width:100.0000%;height:7.7835%"></canvas>
-  <canvas class="ov" id="numc" style="left:26.1538%;top:69.5825%;width:47.6923%;height:4.2377%"></canvas>
-  <a class="ov" style="left:20.5769%;top:59.6255%;width:58.8421%;height:3.5725%" href="https://maps.app.goo.gl/WJASRuugTascabQo8" target="_blank" rel="noopener" aria-label="افتح موقع قصر بصمات على الخريطة"></a>
+  <img src="page.jpg" width="1170" height="4028" alt="دعوة زواج: تتشرف أم عبدالله وأم بسام بدعوتكم لحضور زواج ابننا عبدالله وابنتنا ابتسام، وذلك بمشيئة الله يوم السبت 24/10/2026 الموافق 13 جمادى الأولى 1448 هـ، في قصر بصمات للاحتفالات. دعوة شخصية صالحة لشخص واحد فقط. ممنوع اصطحاب الأطفال، ويمنع جوالات الكاميرا. وبحضوركم يتم لنا الفرح والسرور.">
+  <canvas class="ov" id="cdc" style="left:0.0000%;top:41.7630%;width:100.0000%;height:7.7884%"></canvas>
+  <canvas class="ov" id="numc" style="left:31.0256%;top:68.5856%;width:37.9487%;height:3.3921%"></canvas>
+  <a class="ov" style="left:20.5769%;top:59.6637%;width:58.8421%;height:3.5748%" href="https://maps.app.goo.gl/WJASRuugTascabQo8" target="_blank" rel="noopener" aria-label="افتح موقع قصر بصمات على الخريطة"></a>
   <p class="sr" id="sr" aria-live="polite"></p>
 </main>
 <script>
@@ -138,8 +138,8 @@ requestAnimationFrame(frame);
     var c=document.getElementById('numc'),a=prep(c),x=a[0],w=a[1],h=a[2],s=scale();
     if(!n) return;
     x.textAlign='center';x.textBaseline='middle';x.direction='rtl';
-    x.font='400 '+(10*s)+'px Tajawal, sans-serif'; emb(x,'رقم الدعوة',w/2,8*s,SOFT);
-    x.font='300 '+(39*s)+'px Tajawal, sans-serif'; emb(x,String(n),w/2,16*s+(h-16*s)/2+2*s,INK);
+    x.font='400 '+(8*s)+'px Tajawal, sans-serif'; emb(x,'رقم الدعوة',w/2,6.4*s,SOFT);
+    x.font='300 '+(31.2*s)+'px Tajawal, sans-serif'; emb(x,String(n),w/2,12.8*s+(h-12.8*s)/2+1.6*s,INK);
     document.getElementById('sr').textContent='رقم الدعوة '+n;
   }
   function drawCd(){
@@ -159,7 +159,7 @@ requestAnimationFrame(frame);
   function loop(){ if(drawCd()) setTimeout(loop,1000-(Date.now()%1000)); }
   function all(){drawNum();drawCd();}
   var go=function(){all();loop();};
-  (document.fonts&&document.fonts.load? Promise.all([document.fonts.load('500 26px Tajawal'),document.fonts.load('300 39px Tajawal'),document.fonts.load('400 10px Tajawal')]).catch(function(){}) : Promise.resolve()).then(go);
+  (document.fonts&&document.fonts.load? Promise.all([document.fonts.load('500 26px Tajawal'),document.fonts.load('300 31px Tajawal'),document.fonts.load('400 8px Tajawal')]).catch(function(){}) : Promise.resolve()).then(go);
   window.addEventListener('resize',all);
 })();
 </script>
