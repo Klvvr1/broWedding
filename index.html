@@ -14,10 +14,12 @@
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preload" as="image" href="page.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="fonts/Tajawal-Medium.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/Tajawal-Light.woff2" crossorigin>
 <style>
+  @font-face{font-family:'Tajawal';font-weight:300;font-style:normal;font-display:block;src:url('fonts/Tajawal-Light.woff2') format('woff2')}
+  @font-face{font-family:'Tajawal';font-weight:400;font-style:normal;font-display:block;src:url('fonts/Tajawal-Regular.woff2') format('woff2')}
+  @font-face{font-family:'Tajawal';font-weight:500;font-style:normal;font-display:block;src:url('fonts/Tajawal-Medium.woff2') format('woff2')}
   :root{color-scheme:only light}
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{background:#ecece9;color-scheme:only light;forced-color-adjust:none}
@@ -31,10 +33,10 @@
 </head>
 <body>
 <main class="wrap" id="wrap">
-  <img src="page.jpg" width="1170" height="4019" alt="دعوة زواج: تتشرف أم عبدالله وأم بسام بدعوتكم لحضور زواج ابننا عبدالله وابنتنا ابتسام، وذلك بمشيئة الله يوم السبت 24/10/2026 الموافق 13 جمادى الأولى 1448 هـ، في قصر بصمات للاحتفالات. دعوة شخصية صالحة لشخص واحد فقط. ممنوع اصطحاب الأطفال، ويمنع جوالات الكاميرا. وبحضوركم يتم لنا الفرح والسرور.">
-  <canvas class="ov" id="cdc" style="left:0.0000%;top:41.8609%;width:100.0000%;height:7.8067%"></canvas>
-  <canvas class="ov" id="numc" style="left:26.1538%;top:69.4917%;width:47.6923%;height:4.2504%"></canvas>
-  <a class="ov" style="left:20.8333%;top:59.5050%;width:58.3333%;height:3.5832%" href="https://maps.app.goo.gl/WJASRuugTascabQo8" target="_blank" rel="noopener" aria-label="افتح موقع قصر بصمات على الخريطة"></a>
+  <img src="page.jpg" width="1170" height="4031" alt="دعوة زواج: تتشرف أم عبدالله وأم بسام بدعوتكم لحضور زواج ابننا عبدالله وابنتنا ابتسام، وذلك بمشيئة الله يوم السبت 24/10/2026 الموافق 13 جمادى الأولى 1448 هـ، في قصر بصمات للاحتفالات. دعوة شخصية صالحة لشخص واحد فقط. ممنوع اصطحاب الأطفال، ويمنع جوالات الكاميرا. وبحضوركم يتم لنا الفرح والسرور.">
+  <canvas class="ov" id="cdc" style="left:0.0000%;top:41.7362%;width:100.0000%;height:7.7835%"></canvas>
+  <canvas class="ov" id="numc" style="left:26.1538%;top:69.5825%;width:47.6923%;height:4.2377%"></canvas>
+  <a class="ov" style="left:20.5769%;top:59.6255%;width:58.8421%;height:3.5725%" href="https://maps.app.goo.gl/WJASRuugTascabQo8" target="_blank" rel="noopener" aria-label="افتح موقع قصر بصمات على الخريطة"></a>
   <p class="sr" id="sr" aria-live="polite"></p>
 </main>
 <script>
