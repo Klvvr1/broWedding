@@ -146,7 +146,7 @@
   // invitation number from ?n=
   try{
     var n=parseInt(new URLSearchParams(location.search).get('n'),10);
-    if(n>=1 && n<=200){
+    if(n>=1 && n<=250){
       var num=document.getElementById('num'); num.textContent=n; num.hidden=false;
       document.getElementById('lbl').hidden=false;
       document.title='دعوة رقم '+n+' — زواج عبدالله وابتسام';
